@@ -15,6 +15,7 @@ class Application
       resp.write "Page not found"
       resp.status = 404
     end
+    resp.finish
   end
   
 end
