@@ -12,7 +12,7 @@ class Application
       found_item= @@items_arr.find{|item| item.name == item_str}
       resp.write found_item.name
     else
-      resp.write "Page not found"
+      resp.write "Route not found"
       resp.status = 404
     end
     resp.finish
