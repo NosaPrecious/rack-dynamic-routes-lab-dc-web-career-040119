@@ -12,7 +12,12 @@ class Application
       item_str= req.path.split("/items/").last
       found_item= @@items_arr.find{|item| item.name == item_str}
       # binding.pry
+      if found_item.nil?
+        resp.write "Item not found"
+         resp.status = 400
+       else
       resp.write found_item.price
+    end
     else
       resp.write "Route not found"
       resp.status = 404
