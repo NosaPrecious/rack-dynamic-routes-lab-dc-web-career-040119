@@ -1,6 +1,6 @@
 class Application
   
-  @@items_arr = [Item.new("pencil", 5.23), Item.new("book", 7.96), Item.new("eraser", 6.89)]
+  @@items_arr = [Item.new("Figs",3.42),Item.new("Pears",0.99)]
   
   def call(env)
     
